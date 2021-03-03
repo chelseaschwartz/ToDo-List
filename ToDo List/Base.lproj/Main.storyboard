@@ -103,10 +103,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KR7-XE-91E">
-                                                    <rect key="frame" x="15" y="5" width="287" height="34"/>
+                                                    <rect key="frame" x="15" y="5" width="288" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="textFieldEditingChanged:" destination="Yqe-XW-wAD" eventType="editingChanged" id="LwS-Wr-WMg"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -205,7 +208,7 @@
                         <outlet property="nameField" destination="KR7-XE-91E" id="RpI-qR-SR6"/>
                         <outlet property="noteView" destination="ab4-Dm-tOf" id="tam-XA-1nS"/>
                         <outlet property="reminderSwitch" destination="fPB-2w-cRK" id="g6h-cT-37O"/>
-                        <outlet property="saveButton" destination="i3f-Ad-I32" id="Jtg-9u-fYT"/>
+                        <outlet property="saveBarButton" destination="i3f-Ad-I32" id="Jtg-9u-fYT"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJC-G2-pPh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
